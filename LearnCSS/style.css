@@ -4,21 +4,46 @@ body {
     background-size: cover;
 }
 
+/*
+ SPECIFICITY
+ style attribute | ID | class or attribute | Elements
+
+ Points system
+ Most specificity <------------------------------> Least specificity*/
 .container {
 /*
     background: linear-gradient(#00ccff, #b3f0ff);
     box-shadow: 3px 5px 3px black;
 */
 }
+html body div.container h1 #foo {
+  color: red;
+}
 
+
+
+/*this is a class */
+[id="foo"] {
+  color: cyan;
+}
 /*commas are like ANDs*/
 /*these can include classes and ids*/
+.container h1 {
+  color: red;
+}
+
+h1 {
+  color: green !important;  /*important overrides everything*/
+}
+
 h1, h2, h3 {
     color: #ffffff;
     text-shadow: 2px 2px 5px black;
     line-height: 1rem;
     font-family: sans-serif;
 }
+
+
 
 .borderImg {
     border: 10px dashed red;
