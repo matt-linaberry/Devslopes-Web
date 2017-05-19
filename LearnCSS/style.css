@@ -11,16 +11,26 @@ body {
 */
 }
 
-h1 {
+/*commas are like ANDs*/
+/*these can include classes and ids*/
+h1, h2, h3 {
     color: #ffffff;
     text-shadow: 2px 2px 5px black;
-}
-
-h2 {
-    color: rgb(0, 204, 255);
-    text-shadow: 1px 1px 3px darkblue;
+    line-height: 1rem;
+    font-family: sans-serif;
 }
 
 .borderImg {
     border: 10px dashed red;
+}
+
+/*Decendant list items (any level)*/
+ul li {
+  color: white;
+  font-size: 20px;
+}
+
+/*Any unordered list with a child list item (one level!)*/
+ul > li {
+  color: yellow;
 }
