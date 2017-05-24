@@ -1,7 +1,9 @@
 body {
-    background-image: url(zebra.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-image: url(zebra.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    background-color: #444;
+    text-align: center;
 }
 
 /*
@@ -10,40 +12,40 @@ body {
 
  Points system
  Most specificity <------------------------------> Least specificity*/
-.container {
-/*
-    background: linear-gradient(#00ccff, #b3f0ff);
-    box-shadow: 3px 5px 3px black;
-*/
-}
-html body div.container h1 #foo {
-  color: red;
-}
-
-
-
-/*this is a class */
-[id="foo"] {
-  color: cyan;
-}
-/*commas are like ANDs*/
-/*these can include classes and ids*/
-.container h1 {
-  color: red;
-}
 
 h1 {
-  color: green !important;  /*important overrides everything*/
-}
-
-h1, h2, h3 {
     color: #ffffff;
-    text-shadow: 2px 2px 5px black;
-    line-height: 1rem;
-    font-family: sans-serif;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Slabo+27px', serif;
+}
+
+h3 {
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
+.formatting {
+  font-size: 25px;
+  line-height: 2em;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: yellow;
+  word-spacing: 30px;
+  text-transform: uppercase;
+}
 
 .borderImg {
     border: 10px dashed red;
