@@ -6,7 +6,7 @@
 </head>
 <body>
   <nav>
-    <ul class="topnav">
+    <ul class="topnav" id="dropdownClick">
       <li>
         <a href="#home">Home</a>
       </li>
@@ -25,7 +25,24 @@
       <li class="topnav-right">
         <a href="#signin">Sign In</a>
       </li>
+      <li class="dropdown-icon">
+        <!-- Tell the browser to stay put. -->
+        <a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a>
+      </li>
     </ul>
   </nav>
+
+  <script>
+    function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        // Change topnav to topnav.responsive
+      }
+      else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>
 </html>
