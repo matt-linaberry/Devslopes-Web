@@ -1,0 +1,23 @@
+body {
+    background-color: #356799
+}
+
+h1 {
+    text-align: center;
+    color: #ff0000;
+    text-shadow: 3px 3px #000000;
+}
+
+p {
+    color: beige;
+}
+
+.myClass {
+    color: purple;
+}
+
+#myId {
+    color: greenyellow;
+    background-color: floralwhite;
+    border: 2px solid;
+}
