@@ -1,0 +1,14 @@
+var colors = require('colors');
+console.log('First some yellow text'.yellow);
+console.log('Underline that text'.underline.yellow);
+console.log('Make it bold and red'.bold.red);
+console.log('Double Rainbows all day long'.rainbow);
+console.log("Drop the bash".trap);
+console.log("Drop the rainbow bash".trap.rainbow);
+console.log("Chains are so cool".bold.underline.red);
+console.log("SO ".green + "are".underline + " inverse ".inverse + "styles".yellow);
+console.log("Zebras are so fun".zebra);
+console.log("This is not fun".reset);
+console.log("Background color attack".bgWhite);
+console.log("Use random styles on everything".random);
+console.log("America heck yeah!".america);
